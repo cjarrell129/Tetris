@@ -14,3 +14,4 @@
         android:text="@string/hello_world" />
 
 </RelativeLayout>
+<!-- this is a comment from clay, hope you can see this! -->
