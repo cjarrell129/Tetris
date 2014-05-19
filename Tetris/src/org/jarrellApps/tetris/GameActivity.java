@@ -1,39 +1,19 @@
 package org.jarrellApps.tetris;
 
+
 import java.util.ArrayList;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
-public class MainActivity extends Activity {
-
-	public ArrayList<Integer> mLevelsCompleted = new ArrayList<Integer>();
-	public ArrayList<Integer> mLevelsRemaining = new ArrayList<Integer>();
-	public String mUser = null;
+public class GameActivity extends Activity {
 	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-Button startBtn = (Button) findViewById(R.id.startButton);
-		
-		startBtn.setOnClickListener(
-				new OnClickListener() {
-					public void onClick(View v) {
-					}
-				});
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 
 	@Override
@@ -70,6 +50,13 @@ Button startBtn = (Button) findViewById(R.id.startButton);
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
 	}
 
 }

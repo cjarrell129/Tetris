@@ -3,6 +3,9 @@
 
     <string name="app_name">Tetris</string>
     <string name="action_settings">Settings</string>
+    <string name="welcomeString">Welcome to Tetris! Please set a user name.</string>
+    <string name="startString">Begin!</string>
+    <string name="title_activity_game">GameActivity</string>
     <string name="hello_world">Hello world!</string>
 
 </resources>
