@@ -24,6 +24,7 @@ Button startBtn = (Button) findViewById(R.id.startButton);
 		
 		startBtn.setOnClickListener(
 				new OnClickListener() {
+					@Override
 					public void onClick(View v) {
 					}
 				});
